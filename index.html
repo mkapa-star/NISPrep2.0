@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/pocketbase/dist/pocketbase.umd.js"></script>
+<script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NISPrep – Подготовка в игровой форме</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">NISPrep</div>
+        <nav>
+            <a href="./about.html">О нас</a>
+            <a href="#">Языки</a>
+           
+        </nav>
+        
+        <div class="auth-buttons">
+            <button class="btn btn-login">Войти</button>
+            <button class="btn btn-signup">Начать</button>
+        </div>
+    </header>
+
+    <section class="hero-section image-container">
+        <div class="hero-content">
+            <h1>Поступай в НИШ! <span></span></h1>
+            <p>Наша геймифицированная система обучения поможет тебе освоить новый язык быстро и весело. Без скучных учебников.</p>
+            
+            <div class="language-select-block">
+                <select id="language-select">
+                    <option value="en">6 класс</option>
+                    <option value="es">9-10 класс</option>
+                </select>
+                <button class="btn btn-primary" id="start-button">Начать бесплатно</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Почему выбирают NISPrep?</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <span class="icon">🏆</span>
+                <h3>Геймификация</h3>
+                <p>Соревнуйтесь в лигах, зарабатывайте кристаллы и не теряйте ежедневную серию.</p>
+            </div>
+            <div class="feature-item">
+                <span class="icon">🧠</span>
+                <h3>Проверенная методика</h3>
+                <p>Короткие, но эффективные уроки, основанные на интервальном повторении.</p>
+            </div>
+            <div class="feature-item">
+                <span class="icon">📱</span>
+                <h3>Всегда с тобой</h3>
+                <p>Учись на компьютере или в мобильном приложении. Прогресс синхронизируется.</p>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <footer>
+        <p>&copy; 2025 NISPrep. Все права защищены.</p>
+        <div class="social-links">
+            <a href="#">FAQ</a>
+            <a href="#">Конфиденциальность</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Вход в NISPrep</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="loginEmail">Email / Логин</label>
+                <input type="text" id="loginEmail" name="loginEmail" required>
+            </div>
+            <div class="input-group">
+                <label for="loginPassword">Пароль</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+            </div>
+            <button type="submit" class="btn btn-primary login-submit-btn">Войти</button>
+            <p class="modal-link">
+                Нет аккаунта? <a href="#">Зарегистрироваться</a>
+            </p>
+        </form>
+        <p id="loginMessage" class="message-text"></p>
+    </div>
+</div>
+</body>
+</html>

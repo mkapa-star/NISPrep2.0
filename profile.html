@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Профиль | NISPrep</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/pocketbase/dist/pocketbase.umd.js"></script>
+    <script src="profile.js" defer></script> 
+</head>
+<body>
+    
+    <header>
+        <nav class="container header-nav">
+            <h1>NISPrep</h1>
+            <div id="user-info-header">
+                <span id="header-user-email"></span> 
+                </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <h2 class="welcome-title">👋 Добро пожаловать, <span id="user-display-name">Пользователь</span>!</h2> 
+        <p>Ваш Email: <strong><span id="user-email-display"></span></strong></p>
+        
+        <div class="profile-section">
+            <h3>Мой текущий курс</h3>
+            <p>Вы записаны на курс: <strong><span id="user-class-display">Загрузка...</span></strong></p> 
+            <p>Здесь будет отображаться ваш текущий прогресс и успеваемость.</p>
+        </div>
+        
+        <button id="logout-btn" class="btn btn-primary">Выйти из аккаунта</button> 
+
+    </main>
+    
+</body>
+</html>
